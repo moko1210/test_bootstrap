@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>モダンランディングページ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://unpkg.com/htmx.org@1.6.1"></script>
+    <style>
+        .hero {
+            background-color: #ffc107; /* 黄色背景 */
+            padding: 50px 20px;
+            color: #000;
+        }
+        .features {
+            background-color: #343a40;
+            color: white;
+            padding: 30px 0;
+        }
+        .features .feature-item {
+            text-align: center;
+        }
+        .features .feature-item i {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .content-section {
+            padding: 50px 20px;
+        }
+        .content-section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .cta-section {
+            background-color: #343a40;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .cta-section button {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar (ハンバーガーメニュー) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">モダンランディングページ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">ホーム</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">特徴</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#content-section1">サービス</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cta">お問い合わせ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 d-flex align-items-center">
+                    <div>
+                        <h1>Lorem</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, consequatur!</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <img src="images/SC.webp" alt="Hero Image" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <div class="row">
+                <div class="col-md-4 feature-item">
+                    <i class="bi bi-cart"></i>
+                    <p>Lorem, ipsum dolor.</p>
+                </div>
+                <div class="col-md-4 feature-item">
+                    <i class="bi bi-cloud"></i>
+                    <p>Lorem, ipsum dolor.</p>
+                </div>
+                <div class="col-md-4 feature-item">
+                    <i class="bi bi-chat"></i>
+                    <p>Lorem, ipsum dolor.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Section 1 -->
+        <section id="content-section1" class="content-section">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 d-flex align-items-center">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam rerum quibusdam nisi autem id a magni incidunt assumenda corporis dolores.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <img src="images/staff.jpg" alt="Feature 1" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Section 2 -->
+        <section class="content-section">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 order-lg-2 d-flex align-items-center">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam rerum quibusdam nisi autem id a magni incidunt assumenda corporis dolores.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 order-lg-1">
+                    <img src="images/souko.webp" alt="Feature 2" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Section 3 -->
+        <section class="content-section">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 d-flex align-items-center">
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam rerum quibusdam nisi autem id a magni incidunt assumenda corporis dolores.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <img src="images/DX.webp" alt="Feature 3" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <!-- Call-to-Action Section -->
+        <section id="cta" class="cta-section">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, ut?</p>
+            <button class="btn btn-primary">Lorem, ipsum.</button>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
